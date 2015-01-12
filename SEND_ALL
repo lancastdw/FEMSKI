@@ -1,0 +1,12 @@
+#!/bin/csh
+mail -s FEMSKI_1_of_10 $1 < ~/FEMSKI/OLD/readme.doc 
+mail -s FEMSKI_2_of_10 $1 < ~/FEMSKI/OLD/fem1.for 
+mail -s FEMSKI_3_of_10 $1 < ~/FEMSKI/OLD/fem2.for 
+mail -s FEMSKI_4_of_10 $1 < ~/FEMSKI/OLD/fem3.for 
+mail -s FEMSKI_5_of_10 $1 < ~/FEMSKI/OLD/fem4.for 
+mail -s FEMSKI_6_of_10 $1 < ~/FEMSKI/OLD/fedata.for 
+mail -s FEMSKI_7_of_10 $1 < ~/FEMSKI/OLD/femcomp.bat 
+mail -s FEMSKI_8_of_10 $1 < ~/FEMSKI/OLD/linker 
+mail -s FEMSKI_9_of_10 $1 < ~/FEMSKI/OLD/beam.in 
+mail -s FEMSKI_10_of_10 $1 < ~/FEMSKI/OLD/brick.in 
+

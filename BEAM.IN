@@ -1,0 +1,39 @@
+*** ** ** ** 2 node simple beam as in primer ** ** ** ***
+How many	 How many   No.loaded  No.sprung  No.of      Maximum	iterative
+elements?  fix.nodes? nodes?	   nodes?     R.H.sides? R.H.sides? solutions?
+   6	    1	     1	      0        1		1	   0
+Element  Prop.list     Node numbers
+   1	    1	     1	 2   0	 0	 0   0	 0   0
+   2	    1	     2	 3   0	 0	 0   0	 0   0
+   3	    1	     3	 4   0	 0	 0   0	 0   0
+   4	    2	     2	 4   0	 0	 0   0	 0   0
+   5	    1	     4	 5   0	 0	 0   0	 0   0
+   6	    1	     5	 6   0	 0	 0   0	 0   0
+Property list 1    (Integer here and in next line must be in correct column.)
+ Element type 7    - You want to use the simple beam, in three dimensions?
+  Young's    Shear          Area of    ZZ-moment  XX-moment  Torsion    Density
+  Modulus    modulus	section    (bending)  (bending	 constant   z-gravity
+  3.45e9	   0.5e9	    .0314      0.000079   0.000079   0.000157	8390.0
+  Coef. of   Temperature
+  expansion  (uniform)
+  0	   0	    0.0      0.0	      0.0	 0.0	    0.0
+Property list 2    (Integer here and in next line must be in correct column.)
+ Element type 7    - You want to use the simple beam, in three dimensions?
+  Young's    Shear          Area of    ZZ-moment  XX-moment  Torsion    Density
+  Modulus    modulus	section    (bending)  (bending	 constant   z-gravity
+  3.45e9	   0.5e9	    0.0177     0.000025   0.000025   0.000050	8390.0
+  Coef. of   Temperature
+  expansion  (uniform)
+  0	   0	    0.0      0.0	      0.0	 0.0	    0.0
+Nodes	 Fixing-codes	Nodal coordinates
+  1	 111111     0.0000000	   0.0000000	  0.0000000
+  2	    0	    0.0000000	   0.0000000	  2.5000000
+  3	    0	    0.0000000	   0.0000000	  4.0000000
+  4	    0	    1.0000000	   0.0000000	  4.0000000
+  5	    0	    2.0000000	   0.0000000	  4.0000000
+ -6	    0	    3.0000000	   0.0000000	  4.0000000
+There are no nonzero fixities in this job.
+Node	 Additional loads
+  5	   0.0	0.00	 -736.0    0.000      0.0000  0.0
+There are no additional springs to earth.
+

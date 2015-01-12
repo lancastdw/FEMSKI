@@ -1,0 +1,63 @@
+Brief description of FEMSKI by Andre Cormeau
+
+FEMSKI is a finite element program that was developed by the late professor Bruce Irons 
+in the department of Civil Engineering at the University of Calgary. 
+The goal in the development of FEMSKI was firstly to provide an instructor for teaching 
+the finite element method (FEM) at the undergraduate level, and secondly to provide a 
+documented entry point for graduate students wishing to develop further the theory for 
+new elements, while providing an extensive level of diagnostics and error messages.
+
+Bruce Irons was a pioneer and a world reknown scientist in the FEM world. 
+Terms such as 'frontal solution', 'patch test', 'isoparametric elements', 
+'serendipity family', 'hybrids' and 'semiloof shell' were borned out his fertile 
+imagination and are still associated with him, more than a decade after his death.
+
+The program should be used with the introductory text 'Finite Element Primer' by B.Irons 
+and N.G.Shrive and the intricacies of the software are further explained in the text 
+'Techniques of Finite Elements' by B.Irons and S.Ahmad.
+
+The full source of the program is provided as is. 
+It is written in standard FORTRAN77 in single precision (32 bits/floating point word). 
+FEMSKI has quite of few intersting elements in its library (beams, shells and solids).
+Some accuracy problems have been reported and are simply related to the inherent limited 
+precision of the code. 
+Users wishing to convert to double precision (64 bits/floating point word) should keep 
+in mind that constants in executable statements and DATA statements should be converted 
+to double precision. 
+There is a minimal pre-processing capability. 
+Post-processing is in the form of tabulated output. 
+However, the programming phylosophy - data conversion to tables -> element stiffness -> 
+assembly & solution -> back-substitution blends in perfectly with the frontal technique 
+and is quite efficient. 
+The program is quite difficult to understand for newcomers but well worth the effort 
+for people wishing to get a better grasp of the finite element method.    
+
+
+Original readme file:
+
+CALGARY, MARCH 1987
+
+FEMSKI IS SPLIT INTO 4 FORTRAN MODULES TO ALLOW COMPILATION ON A PC WITH
+640k MEMORY. THE CODE IS COMPATIBLE WITH MICROSOFT FORTRAN77 V3.31 AND SHOULD
+COMPILE WITH OLDER VERSIONS WITH ONLY MINOR CHANGES.
+
+ALTHOUGH CONVERSION TO MS-FORTRAN IS COMPLETE, OUTPUT IS STILL IN 132 COLUMN
+FORMAT AND IS AWKWARD TO READ ON STANDARD 80 COLUMN SCREENS. INPUT IS NOW ALL
+FREE FORMAT BUT STILL REQUIRES THE LINES OF COMMENTS BETWEEN DATA LINES. THE
+PROGRAM 'FEDATA' WILL GENERATE THESE BUT IS NOT PARTICULARLY USER-FRIENDLY AND
+NEEDS TO BE USED IN CONJUNCTION WITH THE TEXT 'FINITE ELEMENT PRIMER' BY IRONS
+AND SHRIVE.
+
+TO COMPILE THE PROGRAM ON A PC, TYPE THE COMMAND "FEMCOMP". THIS RUNS A BATCH
+FILE WHICH LOOKS FOR THE SOURCE FILES ON DRIVE A: AND A FORTRAN COMPILER
+SOMEWHERE ON THE SYSTEM DEFAULT PATH.
+
+PLEASE REPORT ANY DIFFICULTIES YOU HAVE IN GETTING THE PROGRAM RUNNING. ALSO, 
+WE DO OUR BEST TO VERIFY CODING ERRORS REPORTED BY USERS AND TO MAKE THE 
+NECESSARY UPDATES TO THE SOURCE.
+
+GOOD LUCK!
+
+ 
+
+
